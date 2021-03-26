@@ -1,0 +1,39 @@
+.banner {
+  position: absolute;
+  background-image: url("/src/cssFiles/pp.jpg");
+  background-size: cover;
+  min-width: 100%;
+  height: 800px;
+}
+.inner {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+  background-image: radial-gradient(at top left, #f0ace0, transparent),
+    radial-gradient(at top right, #ffa4b2, transparent),
+    radial-gradient(at bottom left, #a7d3f2, transparent);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+.title {
+  top: 50px;
+  width: 800px;
+  color: rgba(0, 0, 0, 0.7);
+
+  font-size: 16pt;
+  font-family: Arial, sans-serif;
+}
